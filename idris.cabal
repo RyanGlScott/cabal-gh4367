@@ -1,0 +1,58 @@
+Name:           idris
+Version:        0.12.3
+License:        BSD3
+Author:         Edwin Brady
+Maintainer:     Edwin Brady <eb@cs.st-andrews.ac.uk>
+Homepage:       http://www.idris-lang.org/
+
+Stability:      Beta
+Category:       Compilers/Interpreters, Dependent Types
+Synopsis:       Functional Programming Language with Dependent Types
+Description:    Idris is a general purpose language with full dependent types.
+                It is compiled, with eager evaluation.
+                Dependent types allow types to be predicated on values,
+                meaning that some aspects of a program's behaviour can be
+                specified precisely in the type. The language is closely
+                related to Epigram and Agda. There is a tutorial at
+                <http://www.idris-lang.org/documentation>.
+                Features include:
+                .
+                * Full, first class, dependent types with dependent pattern matching
+                .
+                * where clauses, with rule, case expressions,
+                  pattern matching let and lambda bindings
+                .
+                * Interfaces (similar to type classes), monad comprehensions
+                .
+                * do notation, idiom brackets, syntactic conveniences for lists,
+                  tuples, dependent pairs
+                .
+                * Totality checking
+                .
+                * Coinductive types
+                .
+                * Indentation significant syntax, extensible syntax
+                .
+                * Cumulative universes
+                .
+                * Simple foreign function interface (to C)
+                .
+                * Hugs style interactive environment
+
+Cabal-Version:  >= 1.8
+
+Build-type:     Custom
+
+Library
+  Build-depends:  base >=4 && <5
+                , array >= 0.4.0.1 && < 0.6
+                , binary >= 0.7 && < 0.9
+                , bytestring < 0.11
+                , containers >= 0.5 && < 0.6
+                , deepseq < 1.5
+                , directory > 1.2.3.0
+                , filepath < 1.5
+                , haskeline >= 0.7 && < 0.8
+                , pretty < 1.2
+                , time >= 1.4 && < 1.7
+                , transformers < 0.6
