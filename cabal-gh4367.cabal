@@ -1,0 +1,14 @@
+name:                cabal-gh4367
+version:             0.1
+license:             BSD3
+license-file:        LICENSE
+author:              Ryan Scott
+maintainer:          ryan.gl.scott@gmail.com
+category:            Testing
+build-type:          Custom
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  build-depends:       base >=4.9 && <4.10
+  default-language:    Haskell2010
