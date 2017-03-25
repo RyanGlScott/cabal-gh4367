@@ -1,6 +1,3 @@
-{-# LANGUAGE CPP #-}
-{-# OPTIONS_GHC -Wall #-}
-
 import Control.Exception (SomeException, catch)
 import Distribution.Simple
 import System.Process
